@@ -9,32 +9,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checkout the code from GitHub repository
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # Set up Node.js for the build process
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '18'
 
-    # Install dependencies
     - name: Install dependencies
       run: npm install
 
-    # Run tests (even if we don't have tests yet, this step won't fail)
     - name: Run tests
       run: npm test
 
-    # Build Docker image
     - name: Build Docker image
       run: docker build -t altrinjabist/nodejs-demo-app .
 
-    # Log in to DockerHub
     - name: Log in to DockerHub
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
-    # Push the Docker image to DockerHub
-    - name: Push Docker image to DockerHub
+    - name: Push image to DockerHub
       run: docker push altrinjabist/nodejs-demo-app
