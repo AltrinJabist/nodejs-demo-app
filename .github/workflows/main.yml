@@ -29,7 +29,7 @@ jobs:
 
     # Build Docker image
     - name: Build Docker image
-      run: docker build -t your-dockerhub-username/nodejs-demo-app .
+      run: docker build -t altrinjabist/nodejs-demo-app .
 
     # Log in to DockerHub
     - name: Log in to DockerHub
@@ -37,4 +37,4 @@ jobs:
 
     # Push the Docker image to DockerHub
     - name: Push Docker image to DockerHub
-      run: docker push your-dockerhub-username/nodejs-demo-app
+      run: docker push altrinjabist/nodejs-demo-app
