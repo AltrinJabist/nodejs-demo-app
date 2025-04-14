@@ -105,6 +105,8 @@ This project demonstrates how to deploy a Node.js Docker application to a local 
 ├── service.yaml      # Kubernetes Service manifest
 └── README.md
 
+---
+
 ## 🙌 Author
 
 [Altrin Jabist](https://github.com/AltrinJabist)
