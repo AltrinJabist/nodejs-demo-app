@@ -83,6 +83,28 @@ A local Jenkins pipeline that automates the CI process with clear build/test sta
 
 ---
 
+# 🚀 Task 5: Kubernetes Deployment with Minikube
+
+This project demonstrates how to deploy a Node.js Docker application to a local Kubernetes cluster using Minikube.
+
+---
+
+## ✅ Prerequisites
+
+- Docker installed and running
+- Minikube installed and started using Docker driver
+- kubectl configured and working
+
+---
+
+## 📦 Project Structure
+
+```bash
+.
+├── deployment.yaml   # Kubernetes Deployment manifest
+├── service.yaml      # Kubernetes Service manifest
+└── README.md
+
 ## 🙌 Author
 
 [Altrin Jabist](https://github.com/AltrinJabist)
