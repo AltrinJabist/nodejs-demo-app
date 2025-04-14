@@ -99,9 +99,21 @@ This project demonstrates how to deploy a Node.js Docker application to a local 
 
 ## 📦 Project Structure
 
-```bash
+``bash
 .
 ├── deployment.yaml   # Kubernetes Deployment manifest
 ├── service.yaml      # Kubernetes Service manifest
 ├── README.md
 └── screenshot.png 
+
+---
+
+## 📸 Screenshot
+
+![App Screenshot](screenshot.png)
+
+---
+
+## 🙌 Author
+
+[Altrin Jabist](https://github.com/AltrinJabist)
